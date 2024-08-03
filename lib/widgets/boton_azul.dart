@@ -11,7 +11,7 @@ class BotonAzul extends StatelessWidget {
     return ElevatedButton(
         style: TextButton.styleFrom(
           elevation: 2,
-          backgroundColor: Colors.blue,
+          backgroundColor: onPressed!=null? Colors.blue : Colors.grey,
           shape: const StadiumBorder(),
         ),
         onPressed: onPressed,
@@ -21,7 +21,7 @@ class BotonAzul extends StatelessWidget {
             child: Center(
                 child: Text(
               text,
-              style: TextStyle(color: Colors.white, fontSize: 17),
+              style: const TextStyle(color: Colors.white, fontSize: 17),
             ))));
   }
 }
